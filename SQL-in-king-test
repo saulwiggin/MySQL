@@ -1,0 +1,35 @@
+select data
+SELECT * FROM Customers;
+
+/create table
+CREATE TABLE table_name
+(
+column_name1 data_type(size),
+column_name2 data_type(size),
+column_name3 data_type(size),
+....
+);
+
+/FIND TABLE
+ELECT column_name,column_name
+FROM table_name
+WHERE column_name operator value;
+
+/INSERT VALUES INTO TABLE
+INSERT INTO table_name
+VALUES (value1,value2,value3,...);
+
+/find only unique characters in dataset with distinct
+SELECT DISTINCT column_name,column_name
+FROM table_name;
+
+/UPDATE TABLE
+UPDATE table_name
+SET column1=value1,column2=value2,...
+WHERE some_column=some_value;
+
+/INNER JOIN
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name=table2.column_name;
